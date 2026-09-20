@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+header {
+    a {
+        color: #F1F0E9;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: rgb(255, 193, 7);
+    }
+
+    .offcanvas-body {
+        background-image: url(./voc.jpg);
+        background-size: cover;
+    }
+
+    #container {
+
+        #logo {
+
+            h1 {
+                font-family: "Bodoni Moda", serif;
+                font-weight: 200;
+                color: rgb(255, 193, 7);
+            }
+        }
+
+        nav {
+            align-items: center;
+
+        }
+
+        #b1 {
+            align-items: center;
+        }
+
+    }
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+.section1 {
+    height: 85vh;
+
+    .ls1 {
+        background-image: url(./voc6.jpg);
+        background-size: cover;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+
+        .p1s1 {
+            font-family: "Caveat", cursive;
+            font-weight: 900;
+            font-size: xx-large;
+        }
+
+        .h1s1 {
+            font-family: "Bodoni Moda", serif;
+            font-weight: 500;
+        }
+
+        .p2s1 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .buttns {
+            padding-top: 30px;
+
+            .bs1 {
+                padding: 8px 10px;
+                background-color: rgb(255, 193, 7);
+                border: none;
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    .rs1 {
+        width: 70%;
+        height: 100%;
+
+        #carouselExampleRide {
+            width: 100%;
+            height: 100%;
+
+            #b {
+                width: 100%;
+                height: 100%;
+
+                #ba {
+                    width: 100%;
+                    height: 100%;
+
+                    #is1 {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+                #bb {
+                    width: 100%;
+                    height: 100%;
+
+                    #is2 {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+
+                #bc {
+                    width: 100%;
+                    height: 100%;
+
+                    #is3 {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.aboutus {
+    background-color: #F1F0E9;
+
+    .container {
+        display: flex;
+
+        @media (max-width:767px) {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .lift {
+            width: 45%;
+
+            @media (max-width:767px) {
+                width: 100%;
+            }
+
+            .story {
+                padding-top: 20px;
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+
+                @media (max-width:767px) {
+                    width: 100%;
+                }
+
+                h3 {
+                    font-family: "Bodoni Moda", serif;
+                    font-weight: 600;
+                    color: rgb(255, 193, 7);
+                }
+
+                h1 {
+                    font-family: 'Times New Roman', Times, serif;
+                    font-weight: 900;
+                }
+
+                p {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: large;
+                    font-weight: 600;
+                }
+
+
+            }
+
+            .expertans {
+                width: 80%;
+
+                .son {
+                    width: calc(100% / 4);
+                    text-align: center;
+
+                    @media (max-width:767px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .right {
+            width: 55%;
+            background-image: url(./wroom\ voc.jpg);
+            background-size: cover;
+
+            @media (max-width:767px) {
+                width: 100%;
+                height: 600px;
+            }
+        }
+
+
+
+    }
+}
+
+#menu {
+    .my-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(255, 193, 7);
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 193, 7);
+    }
+
+    .my-button:hover {
+        background-color: rgb(255, 193, 7);
+        color: black;
+    }
+
+
+    .container {
+        p {
+            color: rgb(255, 193, 7);
+        }
+
+        height: 100vh;
+
+        #i {
+            height: 600px;
+        }
+    }
+}
+
+.contactus {
+    .container {
+        height: 100%;
+        display: flex;
+
+        @media (max-width:1024px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contactuslift {
+            width: calc(100% / 3);
+            padding: 10px 10px 0px 0px;
+
+            @media (max-width:1024px) {
+                width: 100%;
+            }
+
+            .p1contactusl {
+                color: rgb(255, 193, 7);
+            }
+
+            a {
+                color: #F1F0E9;
+                text-decoration: none;
+
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: small;
+                font-weight: 900;
+            }
+
+            a:hover {
+                color: rgb(255, 193, 7);
+            }
+
+            .time {
+                color: #F1F0E9;
+            }
+
+            
+        }
+
+
+
+        .contactuscenter {
+            padding-bottom: 200px;
+
+            a {
+                img {
+                    width: 500px;
+                    height: 350px;
+                    border-radius: 20px;
+
+                    @media (min-width:0px) and (max-width:767px) {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
+            }
+
+
+
+            @media(max-width:1024px) {
+                padding: 10px 0px;
+            }
+        }
+
+        .contactusright {
+            display: flex;
+            justify-content: center;
+            padding: 5px 0px 0px 50px;
+
+            img {
+                width: 400px;
+                height: 350px;
+                border-radius: 20px;
+
+                @media (max-width:1024px) {
+                    width: 100%;
+                    height: 600px;
+                }
+
+
+            }
+
+            @media (max-width:1024px) {
+                width: 100%;
+                padding: 20px 0px;
+            }
+        }
+
+    }
+}
+
+footer {
+    padding-bottom: 20px;
+    background-color: #F1F0E9;
+
+    .container {
+        .navfooter {
+            padding-top: 25px;
+
+            img {
+                width: 45px;
+            }
+        }
+    }
+
+
+    h1 {
+        color: rgb(255, 193, 7);
+        padding: 0px 0px 0px 10rem;
+
+        @media (max-width:1024px) {
+            padding: 0px 0px 0px 2rem;
+
+        }
+    }
+
+    p {
+        color: black;
+        padding: 0px 0px 0px 8rem;
+
+        @media (max-width:1024px) {
+            padding: 0px 0px 0px 0px;
+
+        }
+
+    }
+}

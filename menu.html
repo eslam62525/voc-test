@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | VOC Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./menu.css">
+</head>
+
+<body>
+    <header class=" bg-dark w-100 ">
+        <div id="container" class=" container bg-dark pt-3 pb-2 d-flex justify-content-between">
+            <div id="logo">
+                <h1> -VOC- </h1>
+            </div>
+            <nav class=" d-none justify-content-between w-50 ps-2 pe-2 d-md-flex d-lg-flex">
+                <a href="./index.html"> Home</a>
+                <a href="./about.html">About</a>
+                <a href="https://drive.google.com/file/d/1Dnk-p2OrXqKT1X-y3bMjOHfJQhfJFUMc/view">Menu</a>
+                <a href="./contact.html">contact</a>
+            </nav>
+
+            <button id="b1" type="button" class="btn btn-outline-warning d-md-flex d-lg-flex d-none "> Book a Table
+            </button>
+            <div class="d-flex d-md-none d-lg-none pe-3"> <img
+                    src="./density_medium_19dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.svg" alt="menu"> <a class="btn btn-dark"
+                    data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                </a></div>
+
+        </div>
+        <div class="offcanvas offcanvas-start d-md-none d-lg-none" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+
+            <div class="offcanvas-body">
+                <nav class=" d-flex flex-column d-md-none d-lg-none justify-content-between w-50 ps-2 pe-2 ">
+                    <a href="./index.html" class=> Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="https://drive.google.com/file/d/1Dnk-p2OrXqKT1X-y3bMjOHfJQhfJFUMc/view">Menu</a>
+                    <a href="./contact.html">contact</a>
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
