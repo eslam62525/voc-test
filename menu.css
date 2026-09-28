@@ -64,10 +64,10 @@ header {
         background-size: cover;
 
         @media (max-width:767px) {
-            
-                width: 100%;
-                background-size: cover;
-            
+
+            width: 100%;
+            background-size: cover;
+
         }
     }
 
@@ -78,10 +78,10 @@ header {
         background-size: cover;
 
         @media (max-width:767px) {
-            
-                width: 100%;
-                background-size: cover;
-            
+
+            width: 100%;
+            background-size: cover;
+
         }
     }
 
@@ -93,10 +93,10 @@ header {
         background-size: cover;
 
         @media (max-width:767px) {
-            
-                width: 100%;
-                background-size: cover;
-            
+
+            width: 100%;
+            background-size: cover;
+
         }
     }
 
@@ -108,10 +108,13 @@ header {
         background-size: cover;
 
         @media (max-width:767px) {
-            
-                width: 100%;
-                background-size: cover;
-           
+
+            width: 100%;
+            background-size: cover;
+
         }
     }
 }
+
+
+

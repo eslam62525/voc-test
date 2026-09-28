@@ -58,9 +58,12 @@ header {
 .aboutus {
     background-color: #F1F0E9;
     padding-top: 200px;
-    height: 1000px;
-    @media (max-width:767px) {
+    min-height: 1000px;
+
+    @media (max-width: 767px) {
         padding-top: 90px;
+        min-height: auto;
+        height: auto;
     }
 
     .container {
@@ -87,8 +90,20 @@ header {
                 flex-direction: column;
                 width: 80%;
 
-                @media (max-width:767px) {
-                    width: 100%;
+                @media (max-width: 767px) {
+                    .story {
+                        width: 100%;
+                        padding: 20px 10px 0;
+
+                        h1 {
+                            font-size: 32px;
+                        }
+
+                        p {
+                            font-size: 16px;
+                            line-height: 1.7;
+                        }
+                    }
                 }
 
                 h3 {
@@ -114,58 +129,62 @@ header {
             .expertans {
                 width: 80%;
 
-                .son {
-                    width: calc(100% / 4);
-                    text-align: center;
+                background-color: #F1F0E9;
+                padding-top: 200px;
+                min-height: 1000px;
 
-                    @media (max-width:767px) {
-                        width: 100%;
-                    }
+                @media (max-width: 767px) {
+                    padding-top: 90px;
+                    min-height: auto;
+                    height: auto;
                 }
             }
+
+            .right {
+                width: 55%;
+                height: 100%;
+                background-image: url(./wroom\ voc.jpg);
+                background-size: cover;
+                background-position: center;
+
+                @media (max-width: 767px) {
+                    width: 100%;
+                    height: 350px;
+                    margin-top: 20px;
+                    background-position: center;
+                }
+            }
+
+
+
         }
+    }
 
-        .right {
-            width: 55%;
-            height: 100%;
-            background-image: url(./wroom\ voc.jpg);
-            background-size: cover;
+    footer {
+        padding-bottom: 20px;
+        background-color: #F1F0E9;
 
-            @media (max-width:767px) {
-                width: 100%;
-                height: 600px;
+
+
+        h1 {
+            color: rgb(255, 193, 7);
+            padding: 0px 0px 0px 10rem;
+
+            @media (max-width:1024px) {
+                padding: 0px 0px 0px 2rem;
+
             }
         }
 
+        p {
+            color: white;
+            padding: 0px 0px 0px 8rem;
 
+            @media (max-width:1024px) {
+                padding: 0px 0px 0px 0px;
 
-    }
-}
-
-footer {
-    padding-bottom: 20px;
-    background-color: #F1F0E9;
-
-
-
-    h1 {
-        color: rgb(255, 193, 7);
-        padding: 0px 0px 0px 10rem;
-
-        @media (max-width:1024px) {
-            padding: 0px 0px 0px 2rem;
+            }
 
         }
-    }
-
-    p {
-        color: white;
-        padding: 0px 0px 0px 8rem;
-
-        @media (max-width:1024px) {
-            padding: 0px 0px 0px 0px;
-
-        }
-
     }
 }
