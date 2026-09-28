@@ -388,15 +388,12 @@ footer {
 }
 
 
-/* =========================
-   MOBILE RESPONSIVE
-   ========================= */
+
 
 @media (max-width: 767px) {
 
-    /* Header */
     header #container {
-        padding: 10px 15px !important;
+        padding: 10px 15px ;
         align-items: center;
     }
 
@@ -405,19 +402,15 @@ footer {
     }
 
     header .offcanvas-body nav {
-        width: 100% !important;
+        width: 100% ;
         gap: 25px;
-        padding: 20px !important;
+        padding: 20px ;
     }
 
     header .offcanvas-body nav a {
         font-size: 20px;
     }
 
-
-    /* =========================
-       HERO
-       ========================= */
 
     .section1 {
         height: auto;
@@ -466,9 +459,6 @@ footer {
     }
 
 
-    /* =========================
-       ABOUT US
-       ========================= */
 
     .aboutus .container {
         padding: 0 20px;
@@ -479,7 +469,7 @@ footer {
     }
 
     .aboutus .story {
-        width: 100% !important;
+        width: 100% ;
         padding-top: 30px;
     }
 
@@ -503,7 +493,7 @@ footer {
 
     .aboutus .expertans .son {
         width: 50%;
-        padding: 30px 5px !important;
+        padding: 30px 5px ;
     }
 
     .aboutus .expertans .son h1 {
@@ -518,9 +508,6 @@ footer {
     }
 
 
-    /* =========================
-       MENU
-       ========================= */
 
     #menu .container {
         height: auto;
@@ -541,10 +528,6 @@ footer {
         text-align: center;
     }
 
-
-    /* =========================
-       CONTACT
-       ========================= */
 
     .contactus .container {
         padding: 20px;
@@ -578,9 +561,7 @@ footer {
     }
 
 
-    /* =========================
-       FOOTER
-       ========================= */
+   
 
     footer .container {
         flex-direction: column;
@@ -590,16 +571,16 @@ footer {
     }
 
     footer h1 {
-        padding: 0 !important;
+        padding: 0 ;
     }
 
     footer p {
-        padding: 0 !important;
+        padding: 0 ;
     }
 
     footer .navfooter {
-        width: 100% !important;
-        justify-content: center !important;
+        width: 100% ;
+        justify-content: center ;
         gap: 30px;
     }
 }

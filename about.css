@@ -159,32 +159,124 @@ header {
 
         }
     }
+}
 
-    footer {
-        padding-bottom: 20px;
-        background-color: #F1F0E9;
+footer {
+    padding-bottom: 20px;
 
+    h1 {
+        color: rgb(255, 193, 7);
+        padding: 0px 0px 0px 10rem;
 
-
-        h1 {
-            color: rgb(255, 193, 7);
-            padding: 0px 0px 0px 10rem;
-
-            @media (max-width:1024px) {
-                padding: 0px 0px 0px 2rem;
-
-            }
-        }
-
-        p {
-            color: white;
-            padding: 0px 0px 0px 8rem;
-
-            @media (max-width:1024px) {
-                padding: 0px 0px 0px 0px;
-
-            }
+        @media (max-width:1024px) {
+            padding: 0px 0px 0px 2rem;
 
         }
+    }
+
+    p {
+        color: white;
+        padding: 0px 0px 0px 8rem;
+
+        @media (max-width:1024px) {
+            padding: 0px 0px 0px 0px;
+
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    
+    header #container {
+        padding: 10px 15px ;
+        align-items: center;
+    }
+
+    header #logo h1 {
+        font-size: 28px;
+    }
+
+    header .offcanvas-body nav {
+        width: 100% ;
+        gap: 25px;
+        padding: 20px ;
+    }
+
+    header .offcanvas-body nav a {
+        font-size: 20px;
+    }
+
+    .aboutus .container {
+        padding: 0 20px;
+    }
+
+    .aboutus .lift {
+        width: 100%;
+    }
+
+    .aboutus .story {
+        width: 100% ;
+        padding-top: 30px;
+    }
+
+    .aboutus .story h3 {
+        font-size: 20px;
+    }
+
+    .aboutus .story h1 {
+        font-size: 30px;
+    }
+
+    .aboutus .story p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .aboutus .expertans {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutus .expertans .son {
+        width: 100%;
+        padding: 30px 90px ;
+    }
+
+    .aboutus .expertans .son h1 {
+        font-size: 25px;
+    }
+
+    .aboutus .right {
+        width: 100%;
+        height: 350px;
+        margin-top: 20px;
+        background-image: url(./wroom\ voc.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    footer .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer h1 {
+        padding: 0 ;
+    }
+
+    footer p {
+        padding: 0 ;
+    }
+
+    footer .navfooter {
+        width: 100% ;
+               
     }
 }
