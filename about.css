@@ -79,7 +79,7 @@ header {
 
         .lift {
             width: 45%;
-            height: 100%;
+            
 
             @media (max-width:767px) {
                 width: 100%;
@@ -140,25 +140,25 @@ header {
                     height: auto;
                 }
             }
-
-            .right {
-                width: 55%;
-                height: 100%;
-                background-image: url(./wroom\ voc.jpg);
-                background-size: cover;
-                background-position: center;
-
-                @media (max-width: 767px) {
-                    width: 100%;
-                    height: 350px;
-                    margin-top: 20px;
-                    background-position: center;
-                }
-            }
-
-
-
         }
+
+        .right {
+            width: 55%;
+            background-image: url(./wroom\ voc.jpg);
+            background-size: cover;
+            background-position: center;
+
+            @media (max-width: 767px) {
+                width: 100%;
+                height: 350px;
+                margin-top: 20px;
+                background-position: center;
+            }
+        }
+
+
+
+        
     }
 }
 

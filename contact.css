@@ -55,67 +55,96 @@ header {
 
 .contactus {
     .container {
-        height: auto;
-        display: flex;
+        height: 100%;
 
-        @media (max-width: 767px) {
-            flex-direction: column;
-            padding: 0 20px 30px;
+        @media (max-width:1024px) {
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .contactuslift {
             width: calc(100% / 3);
-            padding: 10px 10px 0 0;
+            padding: 10px 10px 0px 0px;
 
-            @media (max-width: 767px) {
+            @media (max-width:1024px) {
                 width: 100%;
-                padding: 20px 0 10px;
             }
 
             .p1contactusl {
                 color: rgb(255, 193, 7);
-                font-size: 18px;
             }
 
             a {
+                color: #F1F0E9;
+                text-decoration: none;
+
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-                font-size: 14px;
+                font-size: small;
                 font-weight: 900;
-                line-height: 1.6;
             }
 
-            img {
-                width: 22px;
-                height: 22px;
-                vertical-align: middle;
-                margin-right: 5px;
+            a:hover {
+                color: rgb(255, 193, 7);
             }
 
             .time {
                 color: #F1F0E9;
             }
+
+
+        }
+
+        .right {
+            display: flex;
+            gap:10px;
+
+            .contactuslif {
+                padding-bottom: 200px;
+                width: calc(100% / 3);
+
+                a {
+                    img {
+                        width: 100%;
+                        height: 350px;
+                        border-radius: 20px;
+
+                        @media (min-width:0px) and (max-width:767px) {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+
+
+                @media(max-width:1024px) {
+                    padding: 10px 0px;
+                }
+            }
+
         }
 
         .contactuscenter {
-            width: calc(100% / 3);
+            width: calc( 100% / 3);
             padding-bottom: 200px;
 
-            a img {
-                width: 500px;
-                height: 350px;
-                border-radius: 20px;
-                object-fit: cover;
+            a {
+                img {
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 20px;
+
+                    @media (min-width:0px) and (max-width:767px) {
+                        width: 300px;
+                        height: 200px;
+                    }
+                }
             }
 
-            @media (max-width: 767px) {
-                width: 100%;
-                padding: 10px 0;
 
-                a img {
-                    width: 100%;
-                    height: 250px;
-                    object-fit: cover;
-                }
+
+            @media(max-width:1024px) {
+                padding: 10px 0px;
             }
         }
 
@@ -123,27 +152,33 @@ header {
             width: calc(100% / 3);
             display: flex;
             justify-content: center;
-            padding: 5px 0 0 50px;
+            padding: 5px 0px 0px 5px;
 
             img {
-                width: 400px;
+                width: 100%;
                 height: 350px;
                 border-radius: 20px;
-                object-fit: cover;
+
+                @media (max-width:1024px) {
+                    width: 100%;
+                    height: 600px;
+                }
+
+
             }
 
-            @media (max-width: 767px) {
+            @media (max-width:1024px) {
                 width: 100%;
-                padding: 10px 0;
-
-                img {
-                    width: 100%;
-                    height: 250px;
-                    object-fit: cover;
-                }
+                padding: 20px 0px;
             }
         }
+
     }
+
+
+
+
+
 }
 
 footer {
@@ -199,9 +234,9 @@ footer {
 
 @media (max-width: 767px) {
 
-   
+
     header #container {
-        padding: 10px 15px ;
+        padding: 10px 15px;
         align-items: center;
     }
 
@@ -210,9 +245,9 @@ footer {
     }
 
     header .offcanvas-body nav {
-        width: 100% ;
+        width: 100%;
         gap: 25px;
-        padding: 20px ;
+        padding: 20px;
     }
 
     header .offcanvas-body nav a {
@@ -258,16 +293,16 @@ footer {
     }
 
     footer h1 {
-        padding: 0 ;
+        padding: 0;
     }
 
     footer p {
-        padding: 0 ;
+        padding: 0;
     }
 
     footer .navfooter {
-        width: 100% ;
-        justify-content: center ;
+        width: 100%;
+        justify-content: center;
         gap: 30px;
     }
 }

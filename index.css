@@ -248,7 +248,6 @@ header {
             color: rgb(255, 193, 7);
         }
 
-        height: 100vh;
 
         #i {
             height: 600px;
@@ -256,10 +255,39 @@ header {
     }
 }
 
+.Breakfastmenu {
+    .my-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(255, 193, 7);
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 193, 7);
+    }
+
+    .my-button:hover {
+        background-color: rgb(255, 193, 7);
+        color: black;
+    }
+
+
+    .container {
+        height: 100%;
+
+        p {
+            color: rgb(255, 193, 7);
+        }
+
+        #i {
+            height: 600px;
+        }
+    }
+}
+
+
 .contactus {
     .container {
         height: 100%;
-        display: flex;
 
         @media (max-width:1024px) {
             display: flex;
@@ -295,17 +323,46 @@ header {
                 color: #F1F0E9;
             }
 
-            
+
         }
 
+        .right {
+            display: flex;
+            gap:10px;
 
+            .contactuslif {
+                padding-bottom: 200px;
+                width: calc(100% / 3);
+
+                a {
+                    img {
+                        width: 100%;
+                        height: 350px;
+                        border-radius: 20px;
+
+                        @media (min-width:0px) and (max-width:767px) {
+                            width: 300px;
+                            height: 200px;
+                        }
+                    }
+                }
+
+
+
+                @media(max-width:1024px) {
+                    padding: 10px 0px;
+                }
+            }
+
+        }
 
         .contactuscenter {
+            width: calc( 100% / 3);
             padding-bottom: 200px;
 
             a {
                 img {
-                    width: 500px;
+                    width: 100%;
                     height: 350px;
                     border-radius: 20px;
 
@@ -324,12 +381,13 @@ header {
         }
 
         .contactusright {
+            width: calc(100% / 3);
             display: flex;
             justify-content: center;
-            padding: 5px 0px 0px 50px;
+            padding: 5px 0px 0px 5px;
 
             img {
-                width: 400px;
+                width: 100%;
                 height: 350px;
                 border-radius: 20px;
 
@@ -348,7 +406,13 @@ header {
         }
 
     }
+
+
+
+
+
 }
+
 
 footer {
     padding-bottom: 20px;
@@ -393,7 +457,7 @@ footer {
 @media (max-width: 767px) {
 
     header #container {
-        padding: 10px 15px ;
+        padding: 10px 15px;
         align-items: center;
     }
 
@@ -402,9 +466,9 @@ footer {
     }
 
     header .offcanvas-body nav {
-        width: 100% ;
+        width: 100%;
         gap: 25px;
-        padding: 20px ;
+        padding: 20px;
     }
 
     header .offcanvas-body nav a {
@@ -469,7 +533,7 @@ footer {
     }
 
     .aboutus .story {
-        width: 100% ;
+        width: 100%;
         padding-top: 30px;
     }
 
@@ -493,7 +557,7 @@ footer {
 
     .aboutus .expertans .son {
         width: 50%;
-        padding: 30px 5px ;
+        padding: 30px 5px;
     }
 
     .aboutus .expertans .son h1 {
@@ -524,6 +588,25 @@ footer {
     }
 
     #menu .end {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .Breakfastmenu .container {
+        height: auto;
+        padding: 30px 15px 40px;
+    }
+
+    .Breakfastmenu .container h1 {
+        font-size: 30px;
+    }
+
+    .Breakfastmenu .container #i {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .Breakfastmenu .end {
         padding-bottom: 30px;
         text-align: center;
     }
@@ -561,7 +644,7 @@ footer {
     }
 
 
-   
+
 
     footer .container {
         flex-direction: column;
@@ -571,16 +654,16 @@ footer {
     }
 
     footer h1 {
-        padding: 0 ;
+        padding: 0;
     }
 
     footer p {
-        padding: 0 ;
+        padding: 0;
     }
 
     footer .navfooter {
-        width: 100% ;
-        justify-content: center ;
+        width: 100%;
+        justify-content: center;
         gap: 30px;
     }
 }

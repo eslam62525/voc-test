@@ -50,71 +50,179 @@ header {
     }
 }
 
-#section1-menu {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    #container-img1 {
-        width: 90%;
-        height: 100%;
-        background-image: url(./voc7.jpg);
-        background-size: cover;
-
-        @media (max-width:767px) {
-
-            width: 100%;
-            background-size: cover;
-
-        }
+#menu {
+    .my-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(255, 193, 7);
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 193, 7);
     }
 
-    #container-img2 {
-        width: 90%;
-        height: 100%;
-        background-image: url(./voc8.jpg);
-        background-size: cover;
-
-        @media (max-width:767px) {
-
-            width: 100%;
-            background-size: cover;
-
-        }
+    .my-button:hover {
+        background-color: rgb(255, 193, 7);
+        color: black;
     }
 
-    #container-img3 {
-        width: 90%;
 
+    .container {
         height: 100%;
-        background-image: url(./voc9.jpg);
-        background-size: cover;
 
-        @media (max-width:767px) {
+        p {
+            color: rgb(255, 193, 7);
+        }
 
-            width: 100%;
-            background-size: cover;
-
+        #i {
+            height: 600px;
         }
     }
+}
 
-    #container-img4 {
-        width: 90%;
+.Breakfastmenu {
+    .my-button {
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(255, 193, 7);
+        text-decoration: none;
+        border-radius: 10px;
+        border: 2px solid rgb(255, 193, 7);
+    }
 
+    .my-button:hover {
+        background-color: rgb(255, 193, 7);
+        color: black;
+    }
+
+
+    .container {
         height: 100%;
-        background-image: url(./voc10.jpg);
-        background-size: cover;
 
-        @media (max-width:767px) {
+        p {
+            color: rgb(255, 193, 7);
+        }
 
-            width: 100%;
-            background-size: cover;
-
+        #i {
+            height: 600px;
         }
     }
 }
 
 
+@media (max-width: 767px) {
 
+    header #container {
+        padding: 10px 15px;
+        align-items: center;
+    }
+
+    header #logo h1 {
+        font-size: 28px;
+    }
+
+    header .offcanvas-body nav {
+        width: 100%;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    header .offcanvas-body nav a {
+        font-size: 20px;
+    }
+
+    #menu .container {
+        height: auto;
+        padding: 30px 15px 40px;
+    }
+
+    #menu .container h1 {
+        font-size: 30px;
+    }
+
+    #menu .container #i {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    #menu .end {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .Breakfastmenu .container {
+        height: auto;
+        padding: 30px 15px 40px;
+    }
+
+    .Breakfastmenu .container h1 {
+        font-size: 30px;
+    }
+
+    .Breakfastmenu .container #i {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .Breakfastmenu .end {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    
+
+
+    .contactus .container {
+        padding: 20px;
+    }
+
+    .contactus .contactuslift {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contactus .contactuscenter {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .contactus .contactuscenter a img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .contactus .contactusright {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .contactus .contactusright img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+
+
+
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    footer h1 {
+        padding: 0;
+    }
+
+    footer p {
+        padding: 0;
+    }
+
+    footer .navfooter {
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+    }
+}
