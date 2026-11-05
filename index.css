@@ -328,7 +328,7 @@ header {
 
         .right {
             display: flex;
-            gap:10px;
+            gap: 10px;
 
             .contactuslif {
                 padding-bottom: 200px;
@@ -357,7 +357,7 @@ header {
         }
 
         .contactuscenter {
-            width: calc( 100% / 3);
+            width: calc(100% / 3);
             padding-bottom: 200px;
 
             a {
@@ -384,7 +384,7 @@ header {
             width: calc(100% / 3);
             display: flex;
             justify-content: center;
-            padding: 5px 0px 0px 5px;
+            padding: 40px 0px 0px 5px;
 
             img {
                 width: 100%;
@@ -619,6 +619,11 @@ footer {
     .contactus .contactuslift {
         width: 100%;
         padding: 10px 0;
+    }
+
+    .contactus .right {
+        display: flex;
+        flex-direction: column;
     }
 
     .contactus .contactuscenter {
