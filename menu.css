@@ -108,6 +108,42 @@ header {
     }
 }
 
+footer {
+    padding-bottom: 20px;
+    background-color: #F1F0E9;
+
+    .container {
+        .navfooter {
+            padding-top: 25px;
+
+            img {
+                width: 45px;
+            }
+        }
+    }
+
+
+    h1 {
+        color: rgb(255, 193, 7);
+        padding: 0px 0px 0px 10rem;
+
+        @media (max-width:1024px) {
+            padding: 0px 0px 0px 2rem;
+
+        }
+    }
+
+    p {
+        color: black;
+        padding: 0px 0px 0px 8rem;
+
+        @media (max-width:1024px) {
+            padding: 0px 0px 0px 0px;
+
+        }
+
+    }
+}
 
 @media (max-width: 767px) {
 
@@ -167,43 +203,6 @@ header {
         padding-bottom: 30px;
         text-align: center;
     }
-
-    
-
-
-    .contactus .container {
-        padding: 20px;
-    }
-
-    .contactus .contactuslift {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .contactus .contactuscenter {
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .contactus .contactuscenter a img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-    }
-
-    .contactus .contactusright {
-        width: 100%;
-        padding: 20px 0;
-    }
-
-    .contactus .contactusright img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-
-
-
 
     footer .container {
         flex-direction: column;
