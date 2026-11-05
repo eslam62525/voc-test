@@ -57,19 +57,11 @@ header {
 }
 
 .aboutus {
+    padding-top: 100px;
     background-color: #F1F0E9;
-    padding-top: 200px;
-    min-height: 1000px;
-
-    @media (max-width: 767px) {
-        padding-top: 90px;
-        min-height: auto;
-        height: auto;
-    }
 
     .container {
         display: flex;
-        height: 100%;
 
         @media (max-width:767px) {
             display: flex;
@@ -79,7 +71,6 @@ header {
 
         .lift {
             width: 45%;
-            
 
             @media (max-width:767px) {
                 width: 100%;
@@ -91,20 +82,8 @@ header {
                 flex-direction: column;
                 width: 80%;
 
-                @media (max-width: 767px) {
-                    .story {
-                        width: 100%;
-                        padding: 20px 10px 0;
-
-                        h1 {
-                            font-size: 32px;
-                        }
-
-                        p {
-                            font-size: 16px;
-                            line-height: 1.7;
-                        }
-                    }
+                @media (max-width:767px) {
+                    width: 100%;
                 }
 
                 h3 {
@@ -130,14 +109,13 @@ header {
             .expertans {
                 width: 80%;
 
-                background-color: #F1F0E9;
-                padding-top: 200px;
-                min-height: 1000px;
+                .son {
+                    width: calc(100% / 4);
+                    text-align: center;
 
-                @media (max-width: 767px) {
-                    padding-top: 90px;
-                    min-height: auto;
-                    height: auto;
+                    @media (max-width:767px) {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -146,24 +124,32 @@ header {
             width: 55%;
             background-image: url(./wroom\ voc.jpg);
             background-size: cover;
-            background-position: center;
 
-            @media (max-width: 767px) {
+            @media (max-width:767px) {
                 width: 100%;
-                height: 350px;
-                margin-top: 20px;
-                background-position: center;
+                height: 600px;
             }
         }
 
 
 
-        
     }
 }
 
 footer {
     padding-bottom: 20px;
+    background-color: #F1F0E9;
+
+    .container {
+        .navfooter {
+            padding-top: 25px;
+
+            img {
+                width: 45px;
+            }
+        }
+    }
+
 
     h1 {
         color: rgb(255, 193, 7);
@@ -176,7 +162,7 @@ footer {
     }
 
     p {
-        color: white;
+        color: #F1F0E9;
         padding: 0px 0px 0px 8rem;
 
         @media (max-width:1024px) {
@@ -218,7 +204,7 @@ footer {
     }
 
     .aboutus .story {
-        width: 100% ;
+        width: 100%;
         padding-top: 30px;
     }
 
@@ -237,13 +223,12 @@ footer {
 
     .aboutus .expertans {
         width: 100%;
-        display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .aboutus .expertans .son {
-        width: 100%;
-        padding: 30px 90px ;
+        width: 50%;
+        padding: 30px 5px;
     }
 
     .aboutus .expertans .son h1 {
@@ -254,14 +239,11 @@ footer {
         width: 100%;
         height: 350px;
         margin-top: 20px;
-        background-image: url(./wroom\ voc.jpg);
         background-position: center;
-        background-size: cover;
     }
 
 
     footer .container {
-        width: 100%;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -269,15 +251,16 @@ footer {
     }
 
     footer h1 {
-        padding: 0 ;
+        padding: 0;
     }
 
     footer p {
-        padding: 0 ;
+        padding: 0;
     }
 
     footer .navfooter {
-        width: 100% ;
-               
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
     }
 }

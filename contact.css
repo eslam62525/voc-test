@@ -185,18 +185,16 @@ footer {
     padding-bottom: 20px;
     background-color: #F1F0E9;
 
-    #container {
-        @media (max-width:1024px) {
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
+    .container {
+        .navfooter {
+            padding-top: 25px;
+
+            img {
+                width: 45px;
+            }
         }
     }
 
-    @media (max-width:1024px) {
-        padding: 0px 0px 0px 0px;
-
-    }
 
     h1 {
         color: rgb(255, 193, 7);
@@ -215,17 +213,6 @@ footer {
         @media (max-width:1024px) {
             padding: 0px 0px 0px 0px;
 
-        }
-
-    }
-
-    nav {
-        @media (max-width:1024px) {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
         }
 
     }
